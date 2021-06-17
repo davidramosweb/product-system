@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "Running the import job"
+docker exec -u www-data product-system_app sh -c "bin/console app:import"
