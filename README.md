@@ -2,7 +2,7 @@
 
 Integra distintos orígenes de datos de distintas fuentes (FTP, API) y con distintos formatos (XML, CSV, JSON, EXCEL) a una estructura común. Los datos son obtenidos, procesados y almacenados de forma periódica (cada 15min) y en el caso de detectar cambios informa de los mismos a sistemas externos.
 
-## Instalación
+## Instalación
 
 ```
 docker-compose build
