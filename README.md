@@ -63,5 +63,5 @@ Pueden consultarse los productos importados a través de los siguientes EndPoint
 ### Test
 ```
 # run all tests of the application
-docker exec -u www-data product-system_app sh -c "php ./vendor/bin/phpunit"
+docker exec -u www-data -e APP_ENV=test product-system_app sh -c "php ./vendor/bin/phpunit"
 ```
