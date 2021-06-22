@@ -16,9 +16,8 @@ class ImportCommandTest extends KernelTestCase
 
     protected function setUp(): void
     {
-        $kernel = self::bootKernel();
-        $this->application = new Application($kernel);
-        $this->importCommand = self::$container->get('App\Command\ImportCommand');
+        $container = static::getContainer();
+        $this->importCommand = $container->get('App\Command\ImportCommand');
     }
 
     public function testGetExternalResources()
